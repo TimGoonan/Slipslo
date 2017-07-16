@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
+The website is SlipSlo, which is short for Slippery Slope, which is a logical fallacy in debate.
+
+I have the domain slipslo.com until 2027 haha its not hosted though.
+
+To find things to do for the website check out the ToDoList.txt file.
+
 ## Install npm
 
 Run npm install
