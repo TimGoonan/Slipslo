@@ -10,6 +10,11 @@ import { VoteComponent } from './vote/vote.component';
 import { SubmitComponent } from './submit/submit.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShorttermvoteComponent } from './shorttermvote/shorttermvote.component';
+import { LongtermvoteComponent } from './longtermvote/longtermvote.component';
+import { MottoComponent } from './motto/motto.component';
+import { ProfessionalsComponent } from './professionals/professionals.component';
+import { StudentsComponent } from './students/students.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { FooterComponent } from './footer/footer.component';
     VoteComponent,
     SubmitComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ShorttermvoteComponent,
+    LongtermvoteComponent,
+    MottoComponent,
+    ProfessionalsComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
