@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Install npm
 
+Run npm install
 Run npm install -g
 
 There are two files that couldn't be uploaded to GitHub that you have to manually add:
