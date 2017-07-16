@@ -3,17 +3,17 @@ Add/Delete/Modify as needed
 
 ----------------------------------Necessary For Hosting---------------------------------------------------------------
 
- - Fix routing for buttons on page
  - Create logic for age verification (ng if to show elements)
  - Decide how backend will be handled: Design/Architecture, MongoDB, MSSQL, etc.
  - Chatbox feature on Debate page: logic for pairing two people who click different buttons, the actual chatbox itself
  - Send topic submissions to database
  - Send messages from footer to database
  - Create the two voting pages (fancy looking tables with 4 columns: topic,option1,option2,vote button)
+ - Voting logic, (increment value in database?)
  
  
  ----------------------------------Not Necessary For Hosting---------------------------------------------------------
  
- - CSS problems: Message box in footer, formatting for box elements
- - Careers Page: Add pages for More buttons, make job openings nicer looking and Apply goes to a page
+ - CSS problems: Message box in footer, job openings formatted better, make everything look fancier
+ - Careers Page: Complete the pages for the More buttons, make Apply go to a page
  - The Serious debate feature : Login/Registration, Username handling, seperate chatboxes, leaderboards, moderation
