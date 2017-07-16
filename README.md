@@ -8,9 +8,14 @@ I have the domain slipslo.com until 2027 haha its not hosted though.
 
 To find things to do for the website check out the ToDoList.txt file.
 
+## Install nodejs nad npm
+
+https://nodejs.org/en/download/
+
 ## Install npm
 
 Run npm install
+
 Run npm install -g
 
 There are two files that couldn't be uploaded to GitHub that you have to manually add:
