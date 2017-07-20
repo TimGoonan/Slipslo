@@ -3,7 +3,6 @@ Add/Delete/Modify as needed
 
 ----------------------------------Necessary For Hosting---------------------------------------------------------------
 
- - Create logic for age verification (ng if to show elements)
  - Decide how backend will be handled: Design/Architecture, MongoDB, MSSQL, Firebase, Node server,  etc.
  - Chatbox feature on Debate page: logic for pairing two people who click different buttons, the actual chatbox itself
  - Send topic submissions to database
