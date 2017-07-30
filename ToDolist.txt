@@ -1,0 +1,16 @@
+This is a to do list of what needs to be done on the website ranked by priority.
+Add/Delete/Modify as needed
+
+----------------------------------Necessary For Hosting---------------------------------------------------------------
+
+ - Submit button for the voting
+ - Decide how backend will be handled for Chatbox, everything else rn is Firebase
+ - Chatbox feature on Debate page: logic for pairing two people who click different buttons
+ - Voting logic, (increment value in database?)
+ 
+ ----------------------------------Not Necessary For Hosting---------------------------------------------------------
+ 
+ - NgIF Alert when not all fields are entered in submit/footer
+ - CSS problems: Mobile problems(header missing), job openings formatted better, make everything look fancier
+ - Careers Page: Complete the pages for the More buttons, make Apply go to a page
+ - The Serious debate feature : Login/Registration, Username handling, seperate chatboxes, leaderboards, moderation
