@@ -53,24 +53,20 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="#">
-											<div class="row 50%">
-												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+										<form id="inquiry-send">
+												<div class="form-group">
+													<input type="text" [ngModelOptions]="{standalone: true}" placeholder="Name" class="form-control" [(ngModel)]="name" required>
 												</div>
-												<div class="6u 12u(mobile)">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												<div class="form-group">
+													<input type="text" [ngModelOptions]="{standalone: true}" placeholder="Email" class="form-control" [(ngModel)]="email" required>
 												</div>
-											</div>
-											<div class="row 50%">
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4" [(ngModel)]="message" required></textarea>
 												</div>
-											</div>
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><button (click)="sendInquiryData(name,email,message)" class="btn btn-success">Send</button></li>
 														<li><input type="reset" class="style2" value="Reset" /></li>
 													</ul>
 												</div>
@@ -98,10 +94,10 @@
 												<section>
 													<h3 class="icon fa-comment">Social</h3>
 													<p>
-														<a href="#">Instagram</a><br />
-														<a href="#">Twitter</a><br />
-														<a href="#">LinkedIn</a><br />
-														<a href="www.facebook.com/tim.goonan.73">Facebook</a>
+														<a href="https://www.instagram.com/tgoon323/">Instagram</a><br />
+														<a href="https://www.twitter.com/tgoon323">Twitter</a><br />
+														<a href="https://www.linkedin.com/in/tim-goonan-4a1718a2">LinkedIn</a><br />
+														<a href="https://www.facebook.com/tim.goonan.73">Facebook</a>
 													</p>
 												</section>
 											</div>
@@ -111,7 +107,7 @@
 												<section>
 													<h3 class="icon fa-envelope">Email</h3>
 													<p>
-														<a href="#">timothygoonan@gmail.com</a>
+														slipslocompany@gmail.com
 													</p>
 												</section>
 											</div>
@@ -119,7 +115,7 @@
 												<section>
 													<h3 class="icon fa-phone">Phone</h3>
 													<p>
-														(413) 218-7432
+														(413) 555-5555
 													</p>
 												</section>
 											</div>

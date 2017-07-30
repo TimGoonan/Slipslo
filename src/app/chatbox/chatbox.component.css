@@ -1,0 +1,45 @@
+input#message {
+    background:#fff;
+    border:solid black;
+    outline:none;
+    box-shadow:none;
+    font-size:1.6em;
+    font-weight:300;
+    margin-bottom: 3em;
+    padding:1.2em .7em;
+}
+
+#details-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+#details-container p {
+    background:#fff;
+    padding:1.4em;
+    border: solid grey;
+    color:#696969;
+    margin: 12px;
+    width:auto;
+    min-width:1000px;
+}
+
+body {
+    background-color:#EBEBEB;
+    padding-top: 5em;
+}
+* {
+    font-family: 'Raleway';
+}
+button {
+    background:#008FEF;
+    color:white;
+    padding: 1.2em;
+    width:300px;
+    text-align:center;
+    font-size:1.2em;
+    margin-bottom: 30px;
+    cursor:pointer;
+}

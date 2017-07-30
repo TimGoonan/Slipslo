@@ -12,6 +12,7 @@ import { LongtermvoteComponent } from './longtermvote/longtermvote.component';
 import { MottoComponent } from './motto/motto.component';
 import { ProfessionalsComponent } from './professionals/professionals.component';
 import { StudentsComponent } from './students/students.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 
 export const router: Routes = [
     {path:"", redirectTo: "home", pathMatch: "full"},
@@ -25,6 +26,7 @@ export const router: Routes = [
     {path:"motto", component: MottoComponent},
     {path:"professionals", component: ProfessionalsComponent},
     {path:"students", component: StudentsComponent},
+    {path:"chatbox", component: ChatboxComponent},
 ]
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

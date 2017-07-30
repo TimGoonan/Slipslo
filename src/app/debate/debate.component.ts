@@ -6,17 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 export class DebateComponent implements OnInit {
-
-  ageVerification:boolean;
+  ageVerification:boolean = false;
 
   constructor() { }
 
-  ngOnInit() {
-    this.ageVerification = false;
-  }
+  ngOnInit() { }
 
-  public showPage(check:boolean) {
+  showPage(check:boolean) {
     this.ageVerification = check;
+    console.log(this.ageVerification)
   }
-
 }

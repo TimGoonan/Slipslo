@@ -10,13 +10,13 @@
 										<h2>Are You 18 Or Older?</h2>
                   					</header>
 								<ul class="actions actions-centered">
-									<li><button ng-click="showPage(true)" class="button style1 big">Yes</button></li>
-									<li><button ng-click="showPage(false)" class="button style2 big">No</button></li>
+									<li><button (click)="showPage(true)" class="button style1 big">Yes</button></li>
+									<li><button (click)="showPage(false)" class="button style2 big">No</button></li>
 								</ul>
                 				</article>
 							</div> 
 							
-						<div id="main" class="container">
+						<div *ngIf="ageVerification" id="main" class="container">
 						<!-- Features -->
 							<section id="features">
 								<header class="style1">
@@ -27,10 +27,13 @@
 										<img src="./assets/images/trump.png" height="400px;" width="300px;">
 									</div>
 									<br>
-									<li><a href="#" class="button style1 big">Make America Great Again</a></li>
-									<li><a href="#" class="button style2 big">2020 Can't Come Soon Enough</a></li>
+									<a class="button style1 big" routerLink="../chatbox" routerLinkActive="active">Make America Great Again</a>
+									<li><a class="button style2 big" routerLink="../chatbox" routerLinkActive="active">2020 Can't Come Soon Enough</a></li>
 								</ul>
 							</section>
-					</div>
+						</div>
+						<div *ngIf="!ageVerification">
+							
+						</div>
 				</div>
 			</div>

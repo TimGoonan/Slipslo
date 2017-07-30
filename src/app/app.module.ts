@@ -1,5 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core'; 
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { LocationStrategy, HashLocationStrategy} from '@angular/common'; 
 
 import { routes } from './app.router';
 
@@ -15,6 +21,11 @@ import { LongtermvoteComponent } from './longtermvote/longtermvote.component';
 import { MottoComponent } from './motto/motto.component';
 import { ProfessionalsComponent } from './professionals/professionals.component';
 import { StudentsComponent } from './students/students.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
+
+export const firebaseConfig = {
+//Get Api Key from Tim
+};
 
 @NgModule({
   declarations: [
@@ -29,13 +40,19 @@ import { StudentsComponent } from './students/students.component';
     LongtermvoteComponent,
     MottoComponent,
     ProfessionalsComponent,
-    StudentsComponent
+    StudentsComponent,
+    ChatboxComponent
   ],
   imports: [
     BrowserModule,
-    routes
+    FormsModule,
+    HttpModule,
+    routes,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule    
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
