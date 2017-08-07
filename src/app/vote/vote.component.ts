@@ -5,9 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './vote.component.html',
   styleUrls: ['../app.component.css']
 })
+
 export class VoteComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

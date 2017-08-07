@@ -12,6 +12,9 @@
 									<a href="#" class="image featured">
 										<img src="./assets/images/feedback.jpg" alt="" />
 									</a>
+									<div *ngIf="fieldsRequired">
+										<p style="background-color: red; color:white; text-align:center"> All Fields Are Required</p>
+									</div>
 									<div class="container">
 										<form id="submission-send">
 											<div class="form-group">

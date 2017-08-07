@@ -13,10 +13,13 @@ export class SubmitComponent implements OnInit {
 
   constructor(public af: AngularFireDatabase) {
     this.items = af.list('/submissions');
+    this.fieldsRequired = false;
   }
 
   ngOnInit() {
   }
+
+  fieldsRequired: boolean;
   topic: string;
   option1: string;
   option2: string;
@@ -24,10 +27,11 @@ export class SubmitComponent implements OnInit {
 
   sendSubmissionData(topic : string, option1 : string, option2 : string){
     if(topic == null || option1 == null || option2 == null){
-      //error
+      this.fieldsRequired = true;
     }
     else
     {
+      this.fieldsRequired = false;
       this.items.push({topic: topic, option1: option1, option2: option2, voteCount: 0});
       this.topic = null;
       this.option1 = null;

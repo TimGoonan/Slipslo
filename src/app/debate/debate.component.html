@@ -27,8 +27,8 @@
 										<img src="./assets/images/trump.png" height="400px;" width="300px;">
 									</div>
 									<br>
-									<a class="button style1 big" routerLink="../chatbox" routerLinkActive="active">Make America Great Again</a>
-									<li><a class="button style2 big" routerLink="../chatbox" routerLinkActive="active">2020 Can't Come Soon Enough</a></li>
+									<a class="button style1 big" (click)="sendUserToQueue('protrump')">Make America Great Again</a>
+									<a class="button style2 big" (click)="sendUserToQueue('antitrump')">2020 Can't Come Soon Enough</a>
 								</ul>
 							</section>
 						</div>

@@ -5,8 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { LocationStrategy, HashLocationStrategy} from '@angular/common'; 
-
+import { LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { routes } from './app.router';
 
 import { AppComponent } from './app.component';
@@ -22,9 +21,15 @@ import { MottoComponent } from './motto/motto.component';
 import { ProfessionalsComponent } from './professionals/professionals.component';
 import { StudentsComponent } from './students/students.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
+import { JobApplicationComponent } from './job-application/job-application.component';
 
 export const firebaseConfig = {
-//Get Api Key from Tim
+    apiKey: "AIzaSyCCIue-e0dBbUb47n-oX-0BJFNEpKIv2Ig",
+    authDomain: "slipslo-c6e9c.firebaseapp.com",
+    databaseURL: "https://slipslo-c6e9c.firebaseio.com",
+    projectId: "slipslo-c6e9c",
+    storageBucket: "slipslo-c6e9c.appspot.com",
+    messagingSenderId: "752592169613"
 };
 
 @NgModule({
@@ -41,7 +46,8 @@ export const firebaseConfig = {
     MottoComponent,
     ProfessionalsComponent,
     StudentsComponent,
-    ChatboxComponent
+    ChatboxComponent,
+    JobApplicationComponent
   ],
   imports: [
     BrowserModule,

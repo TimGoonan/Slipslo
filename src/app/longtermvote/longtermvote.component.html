@@ -5,6 +5,9 @@
 						<div class="table-title">
 							<h3>Vote For Your Favorite Topic</h3>
 						</div>
+						<div *ngIf="nothingChecked">
+							<p style="background-color: red; color:white; text-align:center">Must Check A Topic</p>
+						</div>
 						<table class="table-fill">
 							<thead>
 								<tr>
@@ -14,28 +17,19 @@
 									<th class="text-left">Vote</th>
 								</tr>
 							</thead>
-							<tbody class="table-hover">
+							<tbody class="table-hover" *ngFor="let item of items | async">
 								<tr>
-								<td class="text-left">Religion</td>
-								<td class="text-left">I Believe In A God/Gods</td>
-								<td class="text-left">All Made Up</td>
-								<td class="text-left"><input type="radio" class="option-input radio" name="example"/></td>							
-								</tr>
-								<tr>
-								<td class="text-left">Legalization Of Marijuana</td>
-								<td class="text-left">Legalize It</td>
-								<td class="text-left">Should Be Illegal</td>
-								<td class="text-left"><input type="radio" class="option-input radio" name="example"/></td>								
-								</tr>
-								<tr>
-								<td class="text-left">Abortion</td>
-								<td class="text-left">Pro-Life</td>
-								<td class="text-left">Pro-Choice</td>
-								<td class="text-left"><input type="radio" class="option-input radio" name="example"/></td>								
+								<td class="text-left">{{item.topic}}</td>
+								<td class="text-left">{{item.option1}}</td>
+								<td class="text-left">{{item.option2}}</td>
+								<td class="text-left"><input type="radio" [(ngModel)]="result" class="option-input radio" name="example" [value]=item/></td>							
 								</tr>
 							</tbody>
-						</table>	
-						<button class="btn btn-success">Submit</button>						
+						</table>
+						<br><br>
+						<div id="wrapper">	
+							<button class="button" (click)="incrementVoteValue(result)">Submit</button>			
+						</div>	
 					</div>
 				</div>
 				<br>

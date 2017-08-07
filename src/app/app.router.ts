@@ -13,6 +13,7 @@ import { MottoComponent } from './motto/motto.component';
 import { ProfessionalsComponent } from './professionals/professionals.component';
 import { StudentsComponent } from './students/students.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
+import { JobApplicationComponent } from './job-application/job-application.component';
 
 export const router: Routes = [
     {path:"", redirectTo: "home", pathMatch: "full"},
@@ -26,7 +27,8 @@ export const router: Routes = [
     {path:"motto", component: MottoComponent},
     {path:"professionals", component: ProfessionalsComponent},
     {path:"students", component: StudentsComponent},
-    {path:"chatbox", component: ChatboxComponent},
+    {path:"chatbox/:id", component: ChatboxComponent},
+    {path:"jobApplication/:id/:guid", component: JobApplicationComponent},
 ]
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

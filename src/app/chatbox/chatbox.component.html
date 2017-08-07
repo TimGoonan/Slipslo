@@ -13,8 +13,9 @@
 
   <input type="text" id="message" *ngIf="(user | async)?.uid" placeholder="Well let's hear it.........Type Here" (keyup.enter)="Send($event.target.value)" [(ngModel)]="msgVal" />
   <div id="details-container">
-      <p *ngFor="let item of items | async">{{item.message}}</p>
+      <p *ngFor="let item of items | async">{{item.id}}<br>{{item.message}}</p>
   </div>
+    <input type="text" id="message" *ngIf="(user | async)?.uid" placeholder="Well let's hear it.........Type Here" (keyup.enter)="Send($event.target.value)" [(ngModel)]="msgVal" />
 </div>
 <br>
 <br>

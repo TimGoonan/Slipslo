@@ -243,6 +243,26 @@ body label {
 }
 
 
+.button {
+    background-color: #40e0d0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+}
 
+.button:hover {
+    background-color: white; /* Green */
+    color: #40e0d0;
+    border: 2px solid #40e0d0; 
+}
 
-
+.wrapper {
+    text-align: center;
+}

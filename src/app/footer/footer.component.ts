@@ -13,8 +13,10 @@ export class FooterComponent implements OnInit {
 
   constructor(public af: AngularFireDatabase) {
     this.items = af.list('/inquiries');
+    this.fieldsRequired = false;
   }
 
+  fieldsRequired: boolean;
   name: string;
   email: string;
   message: string;
@@ -25,10 +27,11 @@ export class FooterComponent implements OnInit {
 
   sendInquiryData(name : string, email : string, message : string){
     if(name == null || email == null || message == null){
-      //error
+      this.fieldsRequired = true;
     }
     else
     {    
+      this.fieldsRequired = false;
       this.items.push({name: name, email: email, message: message});
       this.name = null;
       this.email = null;
